@@ -1,0 +1,11 @@
+[Unit]
+Description=DMZ Services Startup
+Required=rabbitmq-server.service apache2.service
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=dmz
+ExecStart=/home/dmz/ForecastrFiles/weatherServer.php
+[Install]
+WantedBy=multi-user.target
