@@ -1,4 +1,7 @@
 # Forecastr
+
+A weather based application that allows users to save and recieve weather information.
+
 Forecastr Files
   Broker -->
   brokerStartupBackup.service --> automatic systemd unit files
