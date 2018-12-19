@@ -31,3 +31,8 @@ Forecastr Files
   databaseStartupBackup.service
   HotStandby.php --> Backup database server deployed if primary goes down
   testRabbitMQServer.php --> Listens and processes DB requests from rabbitMQ
+  
+Deployment System -->
+    HotStandby.php --> retrieves exported sql file from primary database and applies it to the HotStandby machine for live database replication
+    deployServerListener.php --> transfers files amongst the different clusters in the system
+    deployValues_copy.xml --> Configuration file used to determine where to redirect files 
